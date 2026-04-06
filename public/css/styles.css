@@ -10,12 +10,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* CONTENEDOR */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* HEADER */
 .header {
   width: 100%;
   background: #ffffff;
@@ -27,7 +29,6 @@ body {
 
 .logo {
   font-size: 13px;
-  color: #222;
 }
 
 .nav a {
@@ -37,12 +38,15 @@ body {
   font-size: 12px;
 }
 
+/* HERO */
 .hero {
   position: relative;
   width: 94%;
   height: 370px;
   margin: 0 auto;
-  background-image: url("../img/hero.jpg");
+
+background-image: url("../img/hero.jpg.avif");
+
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -51,7 +55,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -60,23 +64,23 @@ body {
   left: 90px;
   z-index: 2;
   animation: entradaSuave 1s ease;
+  color: #fff;
 }
 
 .hero-content h1 {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.1;
   margin-bottom: 20px;
-  max-width: 900px;
-  color: #111;
+  max-width: 800px;
 }
 
 .hero-content p {
   font-size: 18px;
   margin-bottom: 22px;
-  color: #222;
 }
 
+/* BOTÓN */
 .btn {
   display: inline-block;
   background: #2f7d32;
@@ -93,10 +97,11 @@ body {
   transform: translateY(-2px);
 }
 
+/* MISIÓN */
 .mision {
   width: 100%;
   background: #dddddd;
-  padding: 55px 0;
+  padding: 70px 0;
 }
 
 .mision h2 {
@@ -109,10 +114,11 @@ body {
   max-width: 760px;
 }
 
+/* VALORES */
 .valores {
   width: 100%;
   background: #f2f2f2;
-  padding: 40px 0 50px;
+  padding: 40px 0 60px;
 }
 
 .cards {
@@ -123,7 +129,6 @@ body {
 
 .card {
   width: 190px;
-  min-height: 105px;
   background: #d9d9d9;
   padding: 16px 14px;
 }
@@ -137,21 +142,21 @@ body {
 
 .card p {
   font-size: 14px;
-  line-height: 1.25;
 }
 
+/* CTA */
 .cta {
   width: 100%;
   background: #dddddd;
-  padding: 45px 0 55px;
+  padding: 55px 0 65px;
 }
 
 .cta h2 {
   font-size: 20px;
   margin-bottom: 18px;
-  font-weight: 400;
 }
 
+/* FOOTER */
 .footer {
   background: #222;
   color: #fff;
@@ -167,6 +172,7 @@ body {
   font-size: 14px;
 }
 
+/* ANIMACIÓN */
 @keyframes entradaSuave {
   from {
     opacity: 0;
@@ -178,6 +184,7 @@ body {
   }
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
@@ -197,11 +204,6 @@ body {
 
   .hero-content h1 {
     font-size: 38px;
-    max-width: 90%;
-  }
-
-  .hero-content p {
-    font-size: 16px;
   }
 
   .cards {
